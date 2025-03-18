@@ -12,7 +12,7 @@ const LoggedIn = () => {
     <>
       <div>
         {loggedIn && (
-          <div className="flex gap-4 justify-center items-center">
+          <div className="hidden md:flex gap-4 justify-center items-center">
             <Link className="" href="/friends">
               <Image
                 src="/people.png"
