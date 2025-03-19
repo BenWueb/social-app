@@ -43,7 +43,7 @@ const Comments = () => {
             provident officia ad?
           </p>
           <div className=" flex gap-2 text-gray-500 items-center text-xs">
-            <div className="flex items-center bg-white rounded-xl gap-4 p-2 ">
+            <div className="flex items bg-white rounded-xl gap-4 p-2 ">
               <Image
                 src="/like.png"
                 alt="likes post"

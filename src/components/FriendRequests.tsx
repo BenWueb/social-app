@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const FriendRequests = () => {
   return (
-    <div className="flex flex-col bg-white p-4 rounded-lg shadow-md text-gray-500  gap-4 mt-4">
+    <div className="flex flex-col bg-white p-4 rounded-lg shadow-md text-gray-500  gap-4">
       <div className="flex items-center justify-between">
-        <span className="font-semibold">Friend Requests</span>
+        <span className="font-semibold text-sm">Friend Requests</span>
         <Link href="/" className="text-blue-500 text-xs">
           See all
         </Link>

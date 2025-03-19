@@ -5,7 +5,7 @@ const Ad = ({ size }: { size: "sm" | "md" | "lg" }) => {
     <div className="bg-white rounded-lg shadow-lg p-4 flex gap-4 flex-col">
       {/* TITLE  */}
       <div className="flex justify-between w-full items-center font-semibold text-gray-500">
-        <span>Sponsored Ads</span>
+        <span className="text-sm">Sponsored Ads</span>
         <Image
           src="/more.png"
           alt="more"
@@ -15,7 +15,9 @@ const Ad = ({ size }: { size: "sm" | "md" | "lg" }) => {
         />
       </div>
       <div
-        className={`w-full ${size === "lg" ? "min-h-96" : "min-h-45"} relative`}
+        className={`w-full ${
+          size === "lg" ? "min-h-96" : size === "md" ? "min-h-36" : "min-h-24"
+        } relative`}
       >
         <Image
           src="https://images.pexels.com/photos/31128803/pexels-photo-31128803/free-photo-of-bustling-tokyo-street-crossing-with-billboards.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
@@ -34,7 +36,11 @@ const Ad = ({ size }: { size: "sm" | "md" | "lg" }) => {
         />
         <span className="font-semibold text-blue-500">First Last</span>
       </div>
-      <p className="text-sm">
+      <p
+        className={`${
+          size === "lg" ? "text-md" : size === "md" ? "text-sm" : "text-xs"
+        } `}
+      >
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         aut laboriosam, cum odit
       </p>

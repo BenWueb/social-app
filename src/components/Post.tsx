@@ -4,7 +4,7 @@ import Comments from "./Comments";
 
 const Post = () => {
   return (
-    <div className="p-4 gap-4 flex flex-col">
+    <div className="p-4 gap-4 flex flex-col ">
       <div className="flex justify-between items-center">
         <div className="flex gap-4 items-center">
           <Image
@@ -18,7 +18,7 @@ const Post = () => {
         </div>
         <Image src="/more.png" alt="more" width={16} height={16} />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 ">
         <div className="w-full min-h-96 relative ">
           <Image
             src="https://images.pexels.com/photos/31120801/pexels-photo-31120801/free-photo-of-scenic-beach-landscape-with-rocky-island.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
@@ -27,15 +27,15 @@ const Post = () => {
             className="object-cover rounded-md"
           />
         </div>
-        <p>
+        <p className="">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
           quibusdam omnis provident!
         </p>
       </div>
       {/* INTERACT */}
-      <div className="flex items-center justify-between gap-4 text-sm w-full">
+      <div className="flex items-center justify-between gap-4  w-full">
         <div className="flex gap-8">
-          <div className="flex items-center   bg-slate-100 rounded-xl gap-4 p-2">
+          <div className="flex items-center justify-around   bg-slate-100 rounded-xl gap-4 p-2">
             <Image
               src="/like.png"
               alt="like post"

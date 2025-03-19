@@ -3,7 +3,7 @@ import Image from "next/image";
 const Birthdays = () => {
   return (
     <div className="flex flex-col bg-white p-4 rounded-lg shadow-md text-gray-500  gap-4 ">
-      <span className="font-semibold">Birthdays</span>
+      <span className="font-semibold text-sm">Birthdays</span>
       <div className="flex w-full text-black">
         <div className="flex gap-4 items-center flex-1">
           <Image
